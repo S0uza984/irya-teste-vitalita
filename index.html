@@ -107,6 +107,44 @@ footer { font-size: 0.85rem; color: var(--muted); }
     <p class="detected" id="detected" hidden></p>
   </section>
 
+  <!-- MÉTODO ATUAL NO ANDROID: teste interno do Google Play.
+       Para voltar ao APK: apague esta seção e a nota "note-android" do Google
+       Play, e tire do comentário as duas partes marcadas com "MÉTODO APK". -->
+  <section id="android" hidden>
+    <ol class="steps">
+      <li class="step">
+        <span class="num">1</span>
+        <div class="step-body">
+          <h2>Informe o seu e-mail</h2>
+          <p>Preencha o formulário do estudo com o e-mail da <b>conta Google que você usa no Google Play deste celular</b>.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">2</span>
+        <div class="step-body">
+          <h2>Espere a liberação</h2>
+          <p>A equipe do Irya vai cadastrar o seu e-mail. <b>Espere a equipe avisar</b> antes de continuar.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">3</span>
+        <div class="step-body">
+          <h2>Aceite o convite</h2>
+          <p>Toque no botão abaixo e aceite participar do teste.</p>
+          <a class="btn" href="https://play.google.com/apps/internaltest/4699909016328823437" target="_blank" rel="noopener">Aceitar o convite</a>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">4</span>
+        <div class="step-body">
+          <h2>Instale o Irya</h2>
+          <p>Na mesma tela, toque no link para baixar no Google Play e depois em <b>Instalar</b>.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- MÉTODO APK (parte 1 de 2)
   <section id="android" hidden>
     <ol class="steps">
       <li class="step">
@@ -134,6 +172,7 @@ footer { font-size: 0.85rem; color: var(--muted); }
       </li>
     </ol>
   </section>
+  FIM DO MÉTODO APK (parte 1) -->
 
   <section id="ios" hidden>
     <ol class="steps">
@@ -157,9 +196,17 @@ footer { font-size: 0.85rem; color: var(--muted); }
   </section>
 
   <div class="note" id="note-android" hidden>
+    <strong>Se aparecer "não encontrado"</strong>
+    <p>O seu e-mail pode ainda não ter sido liberado, ou o Google Play pode estar em outra conta. Procure a equipe do Irya.</p>
+  </div>
+
+  <!-- MÉTODO APK (parte 2 de 2)
+  <div class="note" id="note-android" hidden>
     <strong>Este é um arquivo de teste</strong>
     <p>O Irya ainda não está no Google Play. Por isso, o celular pode mostrar um aviso na instalação.</p>
   </div>
+  FIM DO MÉTODO APK (parte 2) -->
+
   <div class="note" id="note-ios" hidden>
     <strong>Precisa do seu ID Apple</strong>
     <p>É a mesma conta que você usa para baixar apps na App Store.</p>
