@@ -112,17 +112,24 @@ footer { font-size: 0.85rem; color: var(--muted); }
       <li class="step">
         <span class="num">1</span>
         <div class="step-body">
-          <h2>Entre no grupo do Irya</h2>
-          <p>Toque no botão abaixo. Vai aparecer a mensagem "Você não tem permissão para acessar o conteúdo". <b>Isso é normal.</b> Toque em <b>Participar do grupo</b>, no alto da tela.</p>
-          <a class="btn" id="link-group" href="https://groups.google.com/g/teste-irya-vitalita" target="_blank" rel="noopener">Entrar no grupo</a>
+          <h2>Baixe o Irya</h2>
+          <p>Toque no botão abaixo. Se o celular perguntar, confirme que quer baixar o arquivo.</p>
+          <a class="btn" href="https://github.com/S0uza984/irya-teste-vitalita/releases/latest/download/Irya.apk">Baixar o Irya</a>
         </div>
       </li>
       <li class="step">
         <span class="num">2</span>
         <div class="step-body">
-          <h2>Ative o teste e instale</h2>
-          <p>Toque em <b>Tornar-se testador</b> e depois em <b>Baixar no Google Play</b>.</p>
-          <a class="btn" id="link-play" href="#" target="_blank" rel="noopener">Ativar o teste</a>
+          <h2>Instale o aplicativo</h2>
+          <p>Abra o arquivo <b>Irya.apk</b> e toque em <b>Instalar</b>.</p>
+          <p>Se o celular bloquear, toque em <b>Configurações</b>, ative <b>Permitir desta fonte</b> e volte. Se aparecer um aviso de segurança, toque em <b>Instalar mesmo assim</b>.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">3</span>
+        <div class="step-body">
+          <h2>Abra o Irya</h2>
+          <p>Procure a equipe do Irya para começar o teste.</p>
         </div>
       </li>
     </ol>
@@ -150,8 +157,8 @@ footer { font-size: 0.85rem; color: var(--muted); }
   </section>
 
   <div class="note" id="note-android" hidden>
-    <strong>Use a mesma conta Google do celular</strong>
-    <p>Se aparecer uma tela pedindo para entrar, use o mesmo e-mail que está no seu Google Play.</p>
+    <strong>Este é um arquivo de teste</strong>
+    <p>O Irya ainda não está no Google Play. Por isso, o celular pode mostrar um aviso na instalação.</p>
   </div>
   <div class="note" id="note-ios" hidden>
     <strong>Precisa do seu ID Apple</strong>
@@ -167,14 +174,7 @@ footer { font-size: 0.85rem; color: var(--muted); }
 </div>
 
 <script>
-// Link de participação do teste fechado no Google Play. Deixe vazio enquanto não existir.
-var PLAY_OPTIN = "";
-
 (function () {
-  var play = document.getElementById("link-play");
-  if (PLAY_OPTIN) { play.href = PLAY_OPTIN; }
-  else { play.classList.add("off"); play.textContent = "Disponível em breve"; play.removeAttribute("href"); }
-
   function detect() {
     var ua = navigator.userAgent || "";
     if (/android/i.test(ua)) return "android";
